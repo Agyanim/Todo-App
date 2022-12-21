@@ -38,7 +38,7 @@ const inputElement=useRef()
             onChange={(e) => setTodo(e.target.value)}
           />
           <button
-            className="bg-blue-700 rounded-xl px-4 py-2 font-bold text-white"
+            className="bg-blue-700 rounded-xl px-4 py-2 font-bold text-white hover:bg-green-600"
             type="submit"
           >
             {editId ? "Edit" : "Go"}

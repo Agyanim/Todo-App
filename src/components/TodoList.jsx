@@ -23,13 +23,13 @@ const TodoList = ({ todoList, setTodoList, setTodo, setEditId,inputElement }) =>
       >
         <li className="flex-1 p-2 text-white">{todo.todo}</li>
         <button
-          className="rounded-lg px-4 bg-blue-700 text-white  text-[12px] my-1"
+          className="rounded-lg px-4 bg-blue-700 text-white  text-[12px] my-1 hover:opacity-80"
           onClick={() => editHandler(todo.id)}
         >
           edit
         </button>
         <button
-          className="rounded-lg px-4 bg-blue-700 text-white  text-[12px] my-1 mr-1"
+          className="rounded-lg px-4 bg-blue-700 text-white  text-[12px] my-1 mr-1 hover:bg-red-600"
           onClick={() => deleteHandler(todo.id)}
         >
           delete
